@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karan Gupta</title>
+    <style>
+        :root {
+            --bg: #fafafa;
+            --text: #1a1a1a;
+            --muted: #555;
+            --accent: #0066cc;
+            --border: #e0e0e0;
+            --card-bg: #fff;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #111;
+                --text: #e8e8e8;
+                --muted: #999;
+                --accent: #4da6ff;
+                --border: #333;
+                --card-bg: #1a1a1a;
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.25rem; }
+        h2 { font-size: 1.1rem; font-weight: 600; margin-top: 2.5rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
+        .subtitle { color: var(--muted); font-size: 0.95rem; margin-bottom: 1.5rem; }
+        .links { margin-bottom: 0.5rem; }
+        .links a { margin-right: 1.2rem; font-size: 0.9rem; }
+        .entry { margin-bottom: 1.5rem; }
+        .entry-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+        .entry-title { font-weight: 600; font-size: 0.95rem; }
+        .entry-date { color: var(--muted); font-size: 0.85rem; }
+        .entry-subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.1rem; }
+        .entry-body { margin-top: 0.4rem; font-size: 0.9rem; color: var(--text); }
+        .entry-body li { margin-bottom: 0.3rem; margin-left: 1.2rem; }
+        .skills { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+        .skill-tag { background: var(--card-bg); border: 1px solid var(--border); padding: 0.25rem 0.6rem; border-radius: 4px; font-size: 0.8rem; }
+        .pub-title { font-weight: 600; }
+        .pub-venue { font-style: italic; color: var(--muted); font-size: 0.85rem; }
+        ul { list-style: disc; padding-left: 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Karan Gupta</h1>
+        <p class="subtitle">Research Fellow, Microsoft Research India</p>
+        <div class="links">
+            <a href="mailto:gupta.karan1209@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/karan-gupta-5869a6226/">LinkedIn</a>
+            <a href="https://github.com/Shadowking912">GitHub</a>
+            <a href="https://arxiv.org/abs/2603.06713">arXiv</a>
+        </div>
+    </header>
+
+    <h2>About</h2>
+    <p style="font-size:0.95rem;">I build agentic AI systems — from on-device reasoning models to large-scale tool orchestration frameworks. Currently at Microsoft Research India, working on shipping 14B agentic models, RL training pipelines, and MCP-based tool ecosystems. BTech CS + Applied Math from IIIT Delhi (8.92 GPA, Honors).</p>
+
+    <h2>Experience</h2>
+
+    <div class="entry">
+        <div class="entry-header">
+            <span class="entry-title">Research Fellow — Microsoft Research India</span>
+            <span class="entry-date">Aug 2025 – Present</span>
+        </div>
+        <div class="entry-body">
+            <ul>
+                <li>Building Aion 1.0 Plan, on-device 14B reasoning and tool-calling model for Windows 11. Shipped at Build 2026.</li>
+                <li>Built orchestration systems for MagenticBrain — planning, delegation, and tool-execution pipelines for multi-agent workflows.</li>
+                <li>Co-authored ATLAS (ICLR 2026 Spotlight) — 4B model approaching frontier-agent performance on MCP benchmarks.</li>
+                <li>Built 200+ synthetic training environments with verifiable reward functions for large-scale RL training.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="entry">
+        <div class="entry-header">
+            <span class="entry-title">Data Scientist — Swiggy</span>
+            <span class="entry-date">May 2025 – Aug 2025</span>
+        </div>
+        <div class="entry-body">
+            <ul>
+                <li>Created Category Copilot for Instamart — actionable sales insights across 100+ categories.</li>
+                <li>Shipped Dineout LLM-based copilot auto-generating 50+ daily reports.</li>
+                <li>Built LLM evaluation framework using DeepEval and Opik.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="entry">
+        <div class="entry-header">
+            <span class="entry-title">Data Science Intern — Swiggy</span>
+            <span class="entry-date">Jan 2025 – May 2025</span>
+        </div>
+        <div class="entry-body">
+            <ul>
+                <li>Integrated open-source LLMs into Hermes Text-to-SQL pipeline, improving accuracy by 20%.</li>
+                <li>Benchmarked NL-to-SQL agents (DeepSeek, Claude) with custom evaluation metrics.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="entry">
+        <div class="entry-header">
+            <span class="entry-title">Software Development Intern — BNY Mellon</span>
+            <span class="entry-date">May 2024 – Jul 2024</span>
+        </div>
+        <div class="entry-body">
+            <ul>
+                <li>Built Graph-RAG for LLM QA using Knowledge Graphs, improving accuracy by 30%. Released to production.</li>
+                <li>Developed LLM-agent-based readme generator deployed as internal app.</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>Publications</h2>
+
+    <div class="entry">
+        <p class="pub-title"><a href="https://arxiv.org/abs/2603.06713">Scaling Agentic Capabilities, Not Context: Efficient Reinforcement Finetuning for Large Toolspaces.</a></p>
+        <p class="pub-venue">Karan Gupta, et al. — Spotlight, ICLR 2026 Workshop on Agents in the Wild</p>
+        <div class="entry-body">
+            <p style="margin-top:0.3rem;">ATLAS: RL fine-tuning framework enabling a 4B model to recover 90% of frontier-agent performance across 28 MCP servers and 257 tools.</p>
+        </div>
+    </div>
+
+    <div class="entry">
+        <p class="pub-title"><a href="https://arxiv.org/abs/2508.16788">Assess and Prompt: A Generative RL Framework for Improving Engagement in Online Mental Health Communities.</a></p>
+        <p class="pub-venue">B. Gaur, Karan Gupta, et al. — EMNLP Findings, 2025</p>
+        <div class="entry-body">
+            <p style="margin-top:0.3rem;">Conversational assistant for mental health support seekers. Fine-tuned Llama, Mistral, Gemma 2, Phi 3.5 with SFT and DPO.</p>
+        </div>
+    </div>
+
+    <h2>Research</h2>
+
+    <div class="entry">
+        <div class="entry-header">
+            <span class="entry-title">Decoding RAG — AIISC</span>
+            <span class="entry-date">Nov 2024 – Feb 2025</span>
+        </div>
+        <p class="entry-subtitle">Guide: Dr. Amitava Das</p>
+        <div class="entry-body">
+            <p>Novel decoding strategy combining Greedy search, Beam search, and RAG for context-aligned LLM responses with low memory usage.</p>
+        </div>
+    </div>
+
+    <div class="entry">
+        <div class="entry-header">
+            <span class="entry-title">CounterSpeech Ranking — IIIT Delhi</span>
+            <span class="entry-date">Aug 2024 – May 2025</span>
+        </div>
+        <p class="entry-subtitle">Guide: Dr. Md. Shad Akhtar</p>
+        <div class="entry-body">
+            <p>Ranking method for intent-conditioned counterspeech generation using DL models to analyze hate speech.</p>
+        </div>
+    </div>
+
+    <h2>Projects</h2>
+
+    <div class="entry">
+        <div class="entry-header">
+            <span class="entry-title"><a href="https://github.com/Shadowking912/deepmind_hackathon">YatraMind</a></span>
+            <span class="entry-date">Mar – May 2024</span>
+        </div>
+        <div class="entry-body">
+            <p>Full-stack AI travel platform using Django, JavaScript, Gemini 2.0 Flash. Features: interactive maps, restaurant discovery, itinerary generation, conversational recommendations.</p>
+        </div>
+    </div>
+
+    <div class="entry">
+        <div class="entry-header">
+            <span class="entry-title"><a href="https://github.com/Master1012/Analogous-Disentangled-Actor-Critic">Analogous Disentangled Actor Critic</a></span>
+            <span class="entry-date">Nov – Dec 2024</span>
+        </div>
+        <div class="entry-body">
+            <p>Reimplemented ADAC RL framework in MuJoCo with adaptive exploration scheduling. Surpassed published baselines.</p>
+        </div>
+    </div>
+
+    <div class="entry">
+        <div class="entry-header">
+            <span class="entry-title"><a href="https://github.com/ShiveshGit/sweb_project">QA using Knowledge Graphs</a></span>
+            <span class="entry-date">Apr – May 2024</span>
+        </div>
+        <div class="entry-body">
+            <p>Few-shot prompting + multihop retrieval + Graph RAG over Wikidata. 53% accuracy with Gemini-1.5-pro on Mintaka Dataset.</p>
+        </div>
+    </div>
+
+    <h2>Skills</h2>
+    <div class="skills">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">C/C++</span>
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">PyTorch</span>
+        <span class="skill-tag">TensorFlow</span>
+        <span class="skill-tag">VeRL</span>
+        <span class="skill-tag">Huggingface</span>
+        <span class="skill-tag">LangChain</span>
+        <span class="skill-tag">vLLM</span>
+        <span class="skill-tag">SGLang</span>
+        <span class="skill-tag">OpenCV</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">Linux</span>
+        <span class="skill-tag">Databricks</span>
+        <span class="skill-tag">Spark</span>
+        <span class="skill-tag">Google Cloud</span>
+        <span class="skill-tag">FastAPI</span>
+        <span class="skill-tag">Django</span>
+        <span class="skill-tag">Neo4J</span>
+        <span class="skill-tag">SPARQL</span>
+        <span class="skill-tag">CI/CD</span>
+    </div>
+
+    <h2>Education</h2>
+    <div class="entry">
+        <div class="entry-header">
+            <span class="entry-title">IIIT Delhi</span>
+            <span class="entry-date">2021 – 2025</span>
+        </div>
+        <p class="entry-subtitle">BTech in Computer Science and Applied Mathematics — GPA: 8.92/10 — Honors</p>
+    </div>
+
+    <h2>Achievements</h2>
+    <div class="entry-body">
+        <ul>
+            <li>ICLR 2026 Workshop Spotlight — ATLAS paper</li>
+            <li>All India Rank 5 — Meesho Visual Taxonomy Kaggle Challenge, 2024</li>
+            <li>Dean's Award for Academic Excellence, 2024</li>
+            <li>Top 150 — Amazon ML Challenge, 2024</li>
+            <li>International Quant Championship 2023 — Global Rank 210</li>
+            <li>JEE Advanced Rank 4302</li>
+        </ul>
+    </div>
+
+    <footer style="margin-top:3rem; padding-top:1rem; border-top:1px solid var(--border); color:var(--muted); font-size:0.8rem;">
+        Karan Gupta &middot; 2026
+    </footer>
+</body>
+</html>
