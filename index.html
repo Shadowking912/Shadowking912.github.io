@@ -29,9 +29,43 @@
             background: var(--bg);
             color: var(--text);
             line-height: 1.6;
-            max-width: 720px;
-            margin: 0 auto;
+            display: flex;
+            min-height: 100vh;
+        }
+        .sidebar {
+            width: 220px;
+            position: sticky;
+            top: 0;
+            height: 100vh;
             padding: 3rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border-right: 1px solid var(--border);
+            flex-shrink: 0;
+        }
+        .sidebar img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        .sidebar h1 { font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .sidebar .subtitle { font-size: 0.8rem; margin-bottom: 1rem; }
+        .sidebar .links { display: flex; flex-direction: column; gap: 0.4rem; }
+        .sidebar .links a { font-size: 0.85rem; }
+        .main {
+            flex: 1;
+            max-width: 700px;
+            padding: 3rem 2rem;
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            body { flex-direction: column; }
+            .sidebar { width: 100%; height: auto; position: static; border-right: none; border-bottom: 1px solid var(--border); padding: 2rem 1.5rem; }
+            .main { padding: 1.5rem; }
         }
         a { color: var(--accent); text-decoration: none; }
         a:hover { text-decoration: underline; }
@@ -55,17 +89,18 @@
     </style>
 </head>
 <body>
-    <header>
-        <img src="photo.jpg" alt="Karan Gupta" style="width:100px; height:100px; border-radius:50%; object-fit:cover; margin-bottom:1rem;">
+    <aside class="sidebar">
+        <img src="photo.jpg" alt="Karan Gupta">
         <h1>Karan Gupta</h1>
-        <p class="subtitle">Research Fellow, Microsoft Research India</p>
+        <p class="subtitle">Research Fellow<br>Microsoft Research India</p>
         <div class="links">
             <a href="mailto:gupta.karan1209@gmail.com">Email</a>
             <a href="https://www.linkedin.com/in/karan-gupta-5869a6226/">LinkedIn</a>
             <a href="https://github.com/Shadowking912">GitHub</a>
             <a href="https://arxiv.org/abs/2603.06713">arXiv</a>
         </div>
-    </header>
+    </aside>
+    <main class="main">
 
     <h2>About</h2>
     <p style="font-size:0.95rem;">I build agentic AI systems — from on-device reasoning models to large-scale tool orchestration frameworks. Currently at Microsoft Research India, working on shipping 14B agentic models, RL training pipelines, and MCP-based tool ecosystems. BTech CS + Applied Math from IIIT Delhi (8.92 GPA, Honors).</p>
@@ -253,5 +288,6 @@
     <footer style="margin-top:3rem; padding-top:1rem; border-top:1px solid var(--border); color:var(--muted); font-size:0.8rem;">
         Karan Gupta &middot; 2026
     </footer>
+    </main>
 </body>
 </html>
